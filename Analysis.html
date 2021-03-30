@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Connect to CSS -->
+    <link rel="stylesheet" href="Analysis.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:300/analysis" method="POST">
+        <div class="form_container">
+            <div class="left_side">
+                <div class="form_item_left">
+                    <label for="Subject" >Idea Title and Description</label>
+                    <input type="text" name="Title" id="Title" required placeholder="Describe Your Idea">
+                </div>
+                <div class="form_item_left">
+                    <label for="idea">Idea</label>
+                    <textarea name="idea" id="idea" required placeholder="Put Your Idea Here!" rows="15">
+                    </textarea>
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="form_item_right">
+                    <label for="investment_strategy">Investment Strategy</label>
+                    <select name="" id="investment_strategy">
+                        <option value="long">Long</option>
+                        <option value="short">Short</option>
+                        <option value="natural">Natural</option>
+                    </select>
+                </div>
+                <fieldset class="field_item">
+                    <legend>Type of Analysis</legend>
+                    <div>
+                        <input type="checkbox" name="trend_analysis" id="trend_analysis">
+                        <label for="trend_analysis">Trend Analysis</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="elliot_wave" id="elliot_wave">
+                        <label for="elliot_wave">Elliot Wave</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="harmonic" id="harmonic">
+                        <label for="harmonic">Harmonic Pattern</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="chart" id="chart">
+                        <label for="chart">Chart Pattern</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="indicator" id="indicator">
+                        <label for="indicator">Technical Indicator</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="gann" id="gann">
+                        <label for="gann">Gann</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="fundamental" id="fundamental">
+                        <label for="fundamental">Fundamental</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
